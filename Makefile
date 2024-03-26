@@ -3,7 +3,7 @@
 SHELL := /bin/bash
 
 runserver:
-	cd backend && source ./env/bin/activate; flask --debug run
+	cd backend && source ./env/bin/activate; flask --app app --debug run
 
 runclient:
 	cd frontend && npm run dev
